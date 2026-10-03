@@ -1,0 +1,20 @@
+[project]
+name = "ant-colony-sim"
+version = "0.1.0"
+description = "Incremental ant colony simulator"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+ant-sim = "ant_colony_game.game:main"
+ant-sim-web = "ant_colony_game.web_app:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
